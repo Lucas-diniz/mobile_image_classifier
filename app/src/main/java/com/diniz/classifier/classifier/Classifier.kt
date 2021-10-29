@@ -1,10 +1,12 @@
-package com.diniz.classifier
+package com.diniz.classifier.classifier
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
 import android.util.Log
 import androidx.camera.core.ImageProxy
+import com.diniz.classifier.ImageTransform
+import com.diniz.classifier.R
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.Interpreter
 import org.tensorflow.lite.support.common.FileUtil

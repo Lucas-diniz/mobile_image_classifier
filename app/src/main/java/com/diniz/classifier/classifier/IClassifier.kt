@@ -1,4 +1,4 @@
-package com.diniz.classifier
+package com.diniz.classifier.classifier
 
 import androidx.camera.core.ImageProxy
 
