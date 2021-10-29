@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Classifier</string>
+    <string name="classifier_on">Classifier on</string>
+    <string name="classifier_off">Classifier off</string>
+    <string name="error_label">Error reading label file</string>
+    <string name="error_model">Error reading model</string>
+    <string name="camera_access">Please, give access to camera</string>
+    <string name="foto_capture">Photo capture failed</string>
+    <string name="foto_success">Photo capture succeeded:</string>
+</resources>
