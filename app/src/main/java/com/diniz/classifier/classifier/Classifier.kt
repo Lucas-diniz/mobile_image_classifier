@@ -20,7 +20,7 @@ import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.IOException
 import java.nio.ByteBuffer
 
-open class Classifier(var context: Context) {
+open class Classifier(var context: Context): IClassifier {
 
     var associatedAxisLabels: List<String>? = null
     var tflite: Interpreter? = null
@@ -31,7 +31,7 @@ open class Classifier(var context: Context) {
     }
 
     @SuppressLint("UnsafeOptInUsageError")
-    fun classify(image: ImageProxy): Map<String, Map.Entry<String, Float>?> {
+    override fun classify(image: ImageProxy): Map<String, Map.Entry<String, Float>?> {
 
         val bitmap: Bitmap = ImageTransform.imageToBitmap(image.image!!)
         val probabilityBuffer = getProbabilityBuffer()
